@@ -1,0 +1,20 @@
+{
+  "name": "graphql-profile",
+  "version": "1.0.0",
+  "description": "We're having issues with slow response times to our graphql queries.  The goal here is to make as simple a program as possible for profiling and see what kind of results we get.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graphql-request": "^1.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
