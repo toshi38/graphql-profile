@@ -21,15 +21,20 @@ let profiledRequest = (...args) => {
   })
 };
 
-const superSimpleQuery = async () => {
-  const query = `
+const query = `
     query pointlessQuery {
       __type(name: "ID") {
         name
       }
     }`;
+
+const superSimpleQuery = async () => {
   return profiledRequest(query);
 };
+
+console.log(`Running with query: ${query}`);
+console.log(`Profiling: ${API}`);
+console.log(`Using API Key: ${TOKEN}`);
 
 console.log(`startTime, endTime, duration(mS)`);
 
