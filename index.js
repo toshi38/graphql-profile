@@ -4,7 +4,7 @@ console.log(`Welcome to a fun profiling!`);
 
 const API = process.env.GRAPHQL_API || 'insert api link here';
 const TOKEN = process.env.GRAPHQL_TOKEN || 'insert token here';
-const ITERATIONS = 30;
+const ITERATIONS = 500;
 
 const client = new GraphQLClient(API, {
   headers: {
