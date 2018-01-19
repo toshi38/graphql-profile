@@ -24,10 +24,10 @@ let profiledRequest = (...args) => {
 const superSimpleQuery = async () => {
   const query = `
     query pointlessQuery {
-    Course(id:"cj9t1pn0eat4a0183rpp8zub4") {
-      id
-    }
-  }`;
+      __type(name: "ID") {
+        name
+      }
+    }`;
   return profiledRequest(query);
 };
 
